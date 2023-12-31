@@ -35,6 +35,20 @@ h2 {
     line-height: 0.1em; /* Adjust the line height for better spacing */
 }
 
+/* Media query for screens with a height less than 400px */
+@media screen and (max-height: 400px) {
+    h2 {
+        font-size: 5em; /* Adjust the font size for smaller screens */
+    }
+}
+
+/* Media query for screens with a height less than 200px */
+@media screen and (max-height: 200px) {
+    h2 {
+        font-size: 3em; /* Adjust the font size for smaller screens */
+    }
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     h2 {
