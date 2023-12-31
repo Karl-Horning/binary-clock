@@ -1,30 +1,23 @@
-$(document).ready(function () {
-    setInterval("clock()", 1000);
+document.addEventListener("DOMContentLoaded", () => {
+    setInterval(clock, 1000);
 });
 
-var clock = (x) => {
-    var currentTime = new Date(),
-        h = currentTime.getHours(),
-        m = currentTime.getMinutes(),
-        s = currentTime.getSeconds();
+const decimalToBinary = (number, length) => {
+    return number.toString(2).padStart(length, "0");
+};
 
-    var hms = [];
-    hms.push(currentTime.getHours());
-    hms.push(currentTime.getMinutes());
-    hms.push(currentTime.getSeconds());
+const getBinaryTime = (hours, minutes, seconds) => {
+    return [hours, minutes, seconds].map((unit) => decimalToBinary(unit, 6));
+};
 
-    for (var i = 0; i < hms.length; i++) {
-        hms[i] = Number(hms[i]).toString(2);
-        while (hms[i].length <= 5) {
-            hms[i] = "0" + hms[i];
-        }
-    }
+const clock = () => {
+    const elClock = document.getElementById("clock");
+    const currentTime = new Date();
+    const hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
 
-    h = Number(h).toString(2);
-    m = Number(m).toString(2);
-    s = Number(s).toString(2);
+    const hms = getBinaryTime(hours, minutes, seconds);
 
-    document.getElementById(
-        "clock"
-    ).innerHTML = `<h2>${hms[0]}</h2><h2>${hms[1]}</h2><h2>${hms[2]}</h2>`;
+    elClock.innerHTML = hms.map((binary) => `<h2>${binary}</h2>`).join("");
 };
