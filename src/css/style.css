@@ -42,8 +42,8 @@ h2 {
     }
 }
 
-/* Media query for screens with a height less than 200px */
-@media screen and (max-height: 200px) {
+/* Media query for screens with a height less than 250px */
+@media screen and (max-height: 250px) {
     h2 {
         font-size: 3em; /* Adjust the font size for smaller screens */
     }
