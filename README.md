@@ -11,7 +11,9 @@
 - [Installation](#installation)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
+- [Author](#author)
 
 ## Description
 
