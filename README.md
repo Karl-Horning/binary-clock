@@ -4,20 +4,22 @@
 
 ## Table of Contents
 
-- [Description](#description)
-- [Features](#features)
-- [Demo](#demo)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
-- [Author](#author)
+- [Binary Clock](#binary-clock)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Features](#features)
+  - [Demo](#demo)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Troubleshooting](#troubleshooting)
+  - [Contributing](#contributing)
+  - [Acknowledgments](#acknowledgments)
+  - [Contact](#contact)
+  - [Author](#author)
 
 ## Description
 
-This project is a binary clock implemented using HTML, CSS, and JavaScript. It displays the current time in a binary format with a visually appealing design.
+This project is a binary clock implemented using HTML, CSS, and JavaScript. It displays the current time in a binary format.
 
 ## Features
 
